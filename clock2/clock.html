@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Flat Clock and Date</title>
+  
+    <link rel="stylesheet" href="reset/reset.min.css">
+
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body {
+  position: repeat;
+  width: 100%;
+  height: 100%;
+  background-image :url("psu3.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  //background-color:#2C3E50;//
+  font-family:Arial, sans-serif;
+  text-align:center;
+}
+
+.box {
+  background:#FFF;
+  border-radius:10px;
+  display:inline-block;
+  margin:15em 0 2em;
+  padding:0 20px 30px;
+}
+
+.date #daymonth {
+  color:#454545;
+  font-size:2em;
+  padding:10px 0;
+}
+.date #year {
+  color:#C1C1C1;
+  font-size:1.8em;
+}
+
+.clock {
+  background-image :url("aoy8.png");
+  height: 100% ;
+  margin: auto auto;
+  display: block;
+  //background-color:#D75B42;//
+  border: 0.6em solid #67D2C8 ;
+  border-radius: 100%;
+  height: 9.5em;
+  margin-top:-60%;
+  position: relative;
+  width: 9.5em;
+}
+.clock span {
+  background: #FFFF99;
+  bottom: 50%;
+  display: block;
+  left: 50%;
+  position: absolute;
+  transform-origin: bottom center;
+}
+.clock .hours {
+  height: 30%;
+  width: 0.2em;
+}
+.clock .minutes {
+  height: 45%;
+  width: 0.2em;
+}
+    </style>
+
+    <script src="reset/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  
+  <div class="box">
+  <div class="clock">
+    <span class="hours"></span>
+    <span class="minutes"></span>
+  </div>
+
+   <div id="watch">
+  <div class="digit">
+    <span></span>
+  </div>
+
+  <div class="date">
+    <div id="daymonth"></div>
+    <div id="year"></div>
+  </div>
+</div>
+
+
+  <script src='reset/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+  <br><font face=angsananew size=2 color=000000> __________________ </font><br>
+  <br><font face=angsananew size=2 color=778899> Nichamon Promthong </font><br>
+  <br><font face=angsananew size=2 color=778899> 5910513057 </font><br>
+  </font>
+
+</body>
+
+</html>
